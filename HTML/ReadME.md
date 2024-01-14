@@ -13,7 +13,7 @@ HTML 使用「標記」（markup）來詮釋文字、圖像、或是其他能在
 3. 內容(content): 元素的內容。
 4. 元素(element): 以上三者加起來就是元素。通常我們會說標籤是HTML element。
 
-![image](https://hackmd.io/_uploads/SkedJcZFa.png)
+![image](https://github.com/patrick0516/web_design_project/assets/109636871/19103dc4-4517-4ffe-b7bb-6eba7158767b)
 
 *. 某些HTML標籤只有opening tag，這種標籤被稱為self-closing tag。
 ### 巣狀元素(Nesting elements)
