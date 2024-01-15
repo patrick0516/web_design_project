@@ -1,0 +1,135 @@
+h1 {
+    color: rgb(255, 255, 0, 0.7);
+    /* 第四个参数是透明度 */
+}
+
+h2 {
+    color: #000000;
+}
+
+
+
+
+h1, h2, h3, h4 {
+    color: red;
+}
+/* it is a group selector */
+
+* {
+    color: blue;
+}
+/* 通配符，所有元素都会被选中 */
+
+
+
+
+h2 {
+    color:greenyellow;
+}
+/* element selector */
+
+
+
+/* id selector */
+#first-paragraph {
+    color: rgb(255, 255, 0,);
+}
+/* need to and a id to the element */
+
+
+/* class selector */
+/* need to add a class to the element */
+.blue-text {
+    color: blue;
+}
+.Larger-image {
+    font-size: 32px;
+}
+
+
+/* element selector and class selector can be used together */
+a.large-text {
+    font-size: 32px;
+}
+
+
+/* descendant selector */
+.red-text {
+    color: red;
+}
+
+.green.text {
+    color: green;
+}
+
+div.link1 a {
+    color: red;
+}
+
+div.link2 a {
+    color: green;
+}
+
+
+/* adjacent sibling selector */
+input[type="text"]:hover {
+    color: blue;
+}
+/* hover是代表滑鼠移動到上面的時候，會有的效果  */
+
+
+input[type="text"]:active {
+    color: green;
+}
+/* active是代表滑鼠按下去的時候，會有的效果  */
+
+
+input[type="text"]:focus {
+    color: yellow;
+}
+/* focus是代表滑鼠在上面的時候，會有的效果  */
+
+
+/* attribute selector */
+p::before {
+    content: ">>";
+    color: blue;
+}
+p::first-line {
+    font-size: 32px;
+}
+*::selection {
+    background-color: lightgreen;
+}
+/* pseudo element用來在元素的前面或後面加上一些內容，這些內容不是寫在html裡面的，而是寫在css裡面的 */
+/* selection那段是用來選取文字的時候，會有的效果 */
+
+
+
+body {
+    color: red;
+}
+/* body是代表整個網頁的內容，所以這邊的color是代表整個網頁的字體顏色 */
+
+
+h1 {
+    color: green;
+}
+
+p {
+    color: red;
+}
+
+h1 {
+    color: blue;
+}
+/* cascading style sheet : 瀑布式樣式表，意思是說，如果有兩個以上的樣式表，那麼會以最後一個為主 */
+ 
+
+
+h2.three {
+    color: red;
+}
+/* 這邊的three是class，所以要在html裡面加上class="three" */
+/* selector specificity 是(0, 1, 1) */
+

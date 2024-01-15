@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>汐止河堤問卷調查</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form action="" method="GET"> <!-- action = "" 代表送出表單後，會送到這個網頁本身，method="post"則會隱藏 -->
+      <label for="">姓名：</label> 
+      <!-- 這是一個標籤 -->
+      <input id="名字" 
+      type="text" 
+      name="姓名" 
+      minlength="5" 
+      maxlength="50" 
+      placeholder="請輸入真實姓名"
+      class="red-text"
+      />
+      
+      <hr>    
+      <!-- 底線 -->
+
+        <!-- 這是一個輸入框 -->
+      <label for="gender">性別:</label>
+      <select name="gender" id="gender" required>
+        <option></option>
+        <option value="male">男性</option>
+        <option value="female">女性</option>
+        <option value="other">其他</option>
+      </select>
+      <!--下拉式選單-->
+
+      <!-- 此處是設定性別的radio標籤 -->
+      <!-- <button type="submit">提交表單</button> -->
+      <!-- <input id="male" type="radio" name="gender" value="male" required/>
+      <label for="male">男性</label>
+      <input id="female" type="radio" name="gender" value="female" />
+      <label for="female">女性</label>
+      <input id="other" type="radio" name="gender" value="other" />
+      <label for="other">其他</label> -->
+
+      <hr />
+      <label for="信箱">信箱:</label>
+      <input type="email" d="信箱" name="email" required>
+
+      <hr />
+      <label for="password">密碼</label>
+      <input type="password" minlength="8" maxlength="40" name="password" id="password" />
+
+      <input type="checkbox" onclick="showPassword" /> ShowPassword
+
+      <hr />
+      <label for="年齡">年齡:</label>
+      <input type="年齡" type="number" name="age" min="0" max="125" step="0.01">
+      <!--step can set value type-->
+      <!-- 0<input type="range" min="0" max="125" step="10" age="100"/>125 -->
+      <!-- usually paired with javascript -->
+
+      <hr />
+      <input id="電子報" type="checkbox" checked name="電子報" value="訂閱"/>
+      <label for="電子報">訂閱電子報</label>
+
+      <hr />
+      <label for="area">地區:</label>
+      <input list="area-list" type="text" name="area" id="area" />
+      <datalist id="area-list">
+        <option value="台北市">台北市</option>
+        <option value="新北市">新北市</option>
+        <option value="桃園市">桃園市</option>
+        <option value="台中市">台中市</option>
+        <option value="台南市">台南市</option>
+        <option value="高雄市">高雄市</option>
+      </datalist>
+
+      <hr />
+      <label for="suggestion">給網站的建議</label>
+      <textarea name="suggestion" 
+      id="suggestion" 
+      cols="30" 
+      rows="10" 
+      placeholder="填寫給網站的建議">
+    </textarea>
+
+      <button type="submit">提交表單</button> 
+      <hr />
+      <p>
+        Sean Chou 2023 &#169;
+      </p>
+      
+
+      <!-- <p>
+        新北市<br />
+        汐止區水源路2段
+      </p> -->
+
+      <!-- 預設type也是submit -->
+      <!-- <input type="file"> -->
+        <!-- 這是一個按鈕 -->
+       <!-- <label for="email">帳號:</label> -->
+       <!-- <input id="email" type="text" name="email" /> -->
+         <!-- <label for="password">密碼:</label> -->
+         <!-- <input id="password" type="password" name="password" /> -->
+         <!-- 這是一個密碼輸入框，name = "password"會遮住text則不會 -->
+            <!-- <button type="submit">登入系統</button> -->
+    </form> 
+    <!-- 這是一個表單 -->
+    <script>
+      let checkbox = document.querySelector("#show");
+      let password = document.querySelector("#password");
+      checkbox.addEventListener("click", () => {
+        if (password.type === "password") {
+          password.type = "text";
+        } else {
+          password.type = "password";
+        }
+      })
+    </script>
+</body>
+</html>
